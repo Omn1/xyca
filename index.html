@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>XYCA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  
+<body>
+<table>
+<tr>
+    <td>
+        <div>
+            <button id="gripbutton" type="button" class="soundbutton">
+                <b style="font-size: xx-large">ГРИП</b>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div>
+            <button id="nenormalbutton" type="button" class="soundbutton">
+                <b style="font-size: x-small">НЕ НОРМАЛЬНЫЙ?</b>
+            </button>
+        </div>
+    </td>
+    </tr>
+<tr>
+    <td>
+        <div>
+            <button id="priselabutton" type="button" class="soundbutton">
+                <img src="img/prisela.png" alt="ПРИСЕЛА">
+            </button>
+        </div>
+    </td>
+    <td>
+        <div>
+            <button id="avotinetbutton" type="button" class="soundbutton">
+                <b style="font-size: medium">А ВОТ И НЕТ</b>
+            </button>
+        </div>
+    </td>
+</tr>
+</table>
+<audio id="gripaudio">
+  <source src="audio/grip.mp3" type="audio/mpeg">  
+</audio>
+<audio id="nenormalaudio">
+  <source src="audio/nenormal.mp3" type="audio/mpeg">  
+</audio>
+<audio id="priselaaudio">
+  <source src="audio/prisela.mp3" type="audio/mpeg">  
+</audio>
+<audio id="avotinetaudio">
+  <source src="audio/avotinet.mp3" type="audio/mpeg">  
+</audio>
+<script>
+    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio"];
+    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton"];
+    for(var i=0; i<buttons.length; i++)
+    {
+        var curbutt = buttons[i];
+        var curaud = audios[i];
+        document.getElementById(curbutt).onclick = getClickHandler(curaud);
+    }
+    function getClickHandler(aud)
+    {
+        return function() {
+            document.getElementById(aud).currentTime=0;
+            document.getElementById(aud).play();
+        };
+    }
+</script>
+</body>
+</html>
