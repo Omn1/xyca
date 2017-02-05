@@ -23,6 +23,13 @@
             </button>
         </div>
     </td>
+    <td>
+        <div>
+            <button id="molotokbutton" type="button" class="soundbutton">
+                <b style="font-size: medium">МОЛОТОК</b>
+            </button>
+        </div>
+    </td>
     </tr>
 <tr>
     <td>
@@ -53,9 +60,12 @@
 <audio id="avotinetaudio">
   <source src="audio/avotinet.mp3" type="audio/mpeg">  
 </audio>
+<audio id="molotokaudio">
+  <source src="audio/molotok.mp3" type="audio/mpeg">  
+</audio>
 <script>
-    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio"];
-    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton"];
+    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio"];
+    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton"];
     for(var i=0; i<buttons.length; i++)
     {
         var curbutt = buttons[i];
