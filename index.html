@@ -46,6 +46,13 @@
             </button>
         </div>
     </td>
+    <td>
+        <div>
+            <button id="bolnoibutton" type="button" class="soundbutton">
+                <img src="img/bolnoi.png" alt="БОЛЬНОЙ">
+            </button>
+        </div>
+    </td>
 </tr>
 </table>
 <audio id="gripaudio">
@@ -63,9 +70,12 @@
 <audio id="molotokaudio">
   <source src="audio/molotok.mp3" type="audio/mpeg">  
 </audio>
+<audio id="bolnoiaudio">
+  <source src="audio/bolnoi.mp3" type="audio/mpeg">  
+</audio>
 <script>
-    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio"];
-    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton"];
+    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio", "bolnoiaudio"];
+    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton", "bolnoibutton"];
     for(var i=0; i<buttons.length; i++)
     {
         var curbutt = buttons[i];
