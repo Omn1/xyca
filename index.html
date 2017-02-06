@@ -69,8 +69,19 @@
             </button>
         </div>
     </td>
+    <td>
+        <div>
+            <button id="narushitelbutton" type="button" class="soundbutton">
+                <img src="img/narushitel.png" alt="НАРУШИТЕЛЬ">
+            </button>
+        </div>
+    </td>
 </tr>
 </table>
+    <p>
+        Check out our GitHub page: 
+        <a href="https://github.com/Omn1/xyca">XYCA</a>
+    </p>
 <audio id="gripaudio">
   <source src="audio/grip.mp3" type="audio/mpeg">  
 </audio>
@@ -95,9 +106,12 @@
 <audio id="razgovoriaudio">
   <source src="audio/razgovori.mp3" type="audio/mpeg">  
 </audio>
+<audio id="narushitelaudio">
+  <source src="audio/narushitel.mp3" type="audio/mpeg">  
+</audio>
 <script>
-    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio", "bolnoiaudio", "guliaemaudio", "razgovoriaudio"];
-    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton", "bolnoibutton", "guliaembutton", "razgovoributton"];
+    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio", "bolnoiaudio", "guliaemaudio", "razgovoriaudio", "narushitelaudio"];
+    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton", "bolnoibutton", "guliaembutton", "razgovoributton", "narushitelbutton"];
     for(var i=0; i<buttons.length; i++)
     {
         var curbutt = buttons[i];
