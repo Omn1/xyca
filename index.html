@@ -30,7 +30,14 @@
             </button>
         </div>
     </td>
-    </tr>
+    <td>
+        <div>
+            <button id="ukrainebutton" type="button" class="soundbutton">
+                <img src="img/ukraine.png" alt="УКРАИНА">
+            </button>
+        </div>
+    </td>
+</tr>
 <tr>
     <td>
         <div>
@@ -50,6 +57,13 @@
         <div>
             <button id="bolnoibutton" type="button" class="soundbutton">
                 <img src="img/bolnoi.png" alt="БОЛЬНОЙ">
+            </button>
+        </div>
+    </td>
+    <td>
+        <div>
+            <button id="svjatoebutton" type="button" class="soundbutton">
+                <img src="img/svjatoe.png" alt="СВЯТОЕ">
             </button>
         </div>
     </td>
@@ -109,9 +123,17 @@
 <audio id="narushitelaudio">
   <source src="audio/narushitel.mp3" type="audio/mpeg">  
 </audio>
+<audio id="ukraineaudio">
+  <source src="audio/ukraine.mp3" type="audio/mpeg">  
+</audio>
+<audio id="svjatoeaudio">
+  <source src="audio/svjatoe.mp3" type="audio/mpeg">  
+</audio>
 <script>
-    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio", "bolnoiaudio", "guliaemaudio", "razgovoriaudio", "narushitelaudio"];
-    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton", "bolnoibutton", "guliaembutton", "razgovoributton", "narushitelbutton"];
+    audios = ["gripaudio","nenormalaudio","priselaaudio","avotinetaudio","molotokaudio", "bolnoiaudio", "guliaemaudio", "razgovoriaudio", "narushitelaudio",
+              "ukraineaudio","svjatoeaudio"];
+    buttons = ["gripbutton","nenormalbutton","priselabutton","avotinetbutton","molotokbutton", "bolnoibutton", "guliaembutton", "razgovoributton", "narushitelbutton",
+               "ukrainebutton","svjatoebutton"];
     for(var i=0; i<buttons.length; i++)
     {
         var curbutt = buttons[i];
